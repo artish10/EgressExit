@@ -1,0 +1,43 @@
+print("You are stuck in a sand ditch.")
+print("Crawl out LEFT or RIGHT.")
+
+do = input(":: ")
+if do == "LEFT":                                                  1
+    print("You see a STARFISH and a CRAB on the sand.")
+    print("And you're hungry! Which do you eat?")
+
+    do = input(":: ")
+    if do == "STARFISH":                                          2
+        print("Oh no! You immediately don't feel well.")
+        print("You do not survive :(")
+
+    elif do == "CRAB":                                            3
+        print("Raw crab should be fine, right? YES or NO.")
+
+        do = input(":: ")
+        if do == "YES":                                           4
+            print("Ok, You eat it raw. Fingers crossed.")
+            print("Food in your belly helps you see a TREE.")
+
+            do = input(":: ")
+            if do == "TREE":                                      5
+                print("It's a coconut tree! And you're thirsty!")
+                print("Do you drink the coconut water? YES OR NO.")
+
+                do = input(":: ")
+                if do == "YES":                                   6
+                    print("Oh boy. Coconut water and raw crab don't mix.")
+                    print("You do not survive :(")
+
+                elif do == "NO":                                  6
+                    print("Good choice.")
+                    print("Look! It's a rescue plane! You made it! \o/")
+
+        elif do == "NO":                                          7
+            print("Well, there's nothing else left to eat.")
+            print("You do not survive :(")
+
+elif do == "RIGHT":                                               8
+    print("No can do. That side is very slippery.")
+    print("You fall very far into some weird cavern.")
+    print("You do not survive :(")
